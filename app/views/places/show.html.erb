@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nom:</strong>
   <%= @place.name %>
 </p>
 
@@ -11,22 +11,22 @@
 </p>
 
 <p>
-  <strong>Address:</strong>
+  <strong>Addresse:</strong>
   <%= @place.address %>
 </p>
 
 <p>
-  <strong>Datestart:</strong>
+  <strong>Date de début:</strong>
   <%= @place.dateStart %>
 </p>
 
 <p>
-  <strong>Dateend:</strong>
+  <strong>Date de fin:</strong>
   <%= @place.dateEnd %>
 </p>
 
 <p>
-  <strong>Event:</strong>
+  <strong>Evènement ?</strong>
   <%= @place.event %>
 </p>
 
@@ -40,5 +40,5 @@
   <%= @place.latitude %>
 </p>
 
-<%= link_to 'Edit', edit_place_path(@place) %> |
-<%= link_to 'Back', places_path %>
+<%= link_to 'Editer', edit_place_path(@place) %> |
+<%= link_to 'Retour', places_path %>

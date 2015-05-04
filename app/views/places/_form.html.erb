@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label "Nom" %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
@@ -20,20 +20,21 @@
     <%= f.text_field :description %>
   </div>
   <div class="field">
-    <%= f.label :address %><br>
+    <%= f.label "Adresse" %><br>
     <%= f.text_field :address %>
   </div>
   <div class="field">
-    <%= f.label :dateStart %><br>
+    <%= f.label "Date de début" %><br>
     <%= f.date_select :dateStart %>
   </div>
   <div class="field">
-    <%= f.label :dateEnd %><br>
+    <%= f.label "Date de fin" %><br>
     <%= f.date_select :dateEnd %>
   </div>
   <div class="field">
-    <%= f.label :event %><br>
+    <%= f.label "Est-ce un évènement ?" %><br>
     <%= f.check_box :event %>
+    <%= f.label "Oui" %>
   </div>
   <div class="field">
     <%= f.label :longitude %><br>
@@ -43,6 +44,7 @@
     <%= f.label :latitude %><br>
     <%= f.text_field :latitude %>
   </div>
+  <br>
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -1,4 +1,4 @@
-<h1>Listing places</h1>
+<h1>Liste des places</h1>
 
 <table>
   <thead>
@@ -26,14 +26,14 @@
         <td><%= place.event %></td>
         <td><%= place.longitude %></td>
         <td><%= place.latitude %></td>
-        <td><%= link_to 'Show', place %></td>
-        <td><%= link_to 'Edit', edit_place_path(place) %></td>
-        <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Afficher', place %></td>
+        <td><%= link_to 'Editer', edit_place_path(place) %></td>
+        <td><%= link_to 'Supprimer', place, method: :delete, data: { confirm: 'Etes vous sûr ?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
+<br><br>
 
-<%= link_to 'New Place', new_place_path %>
+<%= link_to 'Créer une nouvelle place', new_place_path %>
