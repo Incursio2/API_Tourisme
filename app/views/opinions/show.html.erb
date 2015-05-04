@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pseudo:</strong>
+  <%= @opinion.pseudo %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @opinion.comment %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @opinion.date %>
+</p>
+
+<p>
+  <strong>Mark:</strong>
+  <%= @opinion.mark %>
+</p>
+
+<%= link_to 'Edit', edit_opinion_path(@opinion) %> |
+<%= link_to 'Back', opinions_path %>
