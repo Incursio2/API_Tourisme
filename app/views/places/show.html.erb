@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Idplace:</strong>
+  <%= @place.idPlace %>
+</p>
+
+<p>
+  <strong>Primary key:</strong>
+  <%= @place.primary_key %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @place.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @place.description %>
+</p>
+
+<p>
+  <strong>String:</strong>
+  <%= @place.string %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @place.address %>
+</p>
+
+<p>
+  <strong>Datestart:</strong>
+  <%= @place.dateStart %>
+</p>
+
+<p>
+  <strong>Dateend:</strong>
+  <%= @place.dateEnd %>
+</p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @place.event %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @place.longitude %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @place.latitude %>
+</p>
+
+<%= link_to 'Edit', edit_place_path(@place) %> |
+<%= link_to 'Back', places_path %>
