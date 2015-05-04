@@ -11,11 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150504081545) do
+ActiveRecord::Schema.define(version: 20150504091828) do
 
   create_table "places", force: true do |t|
-    t.integer  "idPlace"
-    t.string   "primary_key"
     t.string   "name"
     t.string   "description"
     t.string   "string"

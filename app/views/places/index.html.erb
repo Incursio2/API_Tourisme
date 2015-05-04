@@ -3,8 +3,6 @@
 <table>
   <thead>
     <tr>
-      <th>Idplace</th>
-      <th>Primary key</th>
       <th>Name</th>
       <th>Description</th>
       <th>String</th>
@@ -21,8 +19,6 @@
   <tbody>
     <% @places.each do |place| %>
       <tr>
-        <td><%= place.idPlace %></td>
-        <td><%= place.primary_key %></td>
         <td><%= place.name %></td>
         <td><%= place.description %></td>
         <td><%= place.string %></td>

@@ -1,8 +1,6 @@
 class CreatePlaces < ActiveRecord::Migration
   def change
     create_table :places do |t|
-      t.integer :idPlace
-      t.string :primary_key
       t.string :name
       t.string :description
       t.string :string
