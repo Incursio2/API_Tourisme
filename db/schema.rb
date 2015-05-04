@@ -11,12 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150504091828) do
+ActiveRecord::Schema.define(version: 20150504092321) do
 
   create_table "places", force: true do |t|
     t.string   "name"
     t.string   "description"
-    t.string   "string"
     t.string   "address"
     t.date     "dateStart"
     t.date     "dateEnd"

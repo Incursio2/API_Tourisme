@@ -3,7 +3,6 @@ class CreatePlaces < ActiveRecord::Migration
     create_table :places do |t|
       t.string :name
       t.string :description
-      t.string :string
       t.string :address
       t.date :dateStart
       t.date :dateEnd

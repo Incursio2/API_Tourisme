@@ -3,7 +3,6 @@
 one:
   name: MyString
   description: MyString
-  string: MyString
   address: MyString
   dateStart: 2015-05-04
   dateEnd: 2015-05-04
@@ -14,7 +13,6 @@ one:
 two:
   name: MyString
   description: MyString
-  string: MyString
   address: MyString
   dateStart: 2015-05-04
   dateEnd: 2015-05-04
