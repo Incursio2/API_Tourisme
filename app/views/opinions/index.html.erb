@@ -1,12 +1,12 @@
-<h1>Listing opinions</h1>
+<h1>Liste des opinions</h1>
 
 <table>
   <thead>
     <tr>
       <th>Pseudo</th>
-      <th>Comment</th>
+      <th>Commentaire</th>
       <th>Date</th>
-      <th>Mark</th>
+      <th>Note</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,9 +18,9 @@
         <td><%= opinion.comment %></td>
         <td><%= opinion.date %></td>
         <td><%= opinion.mark %></td>
-        <td><%= link_to 'Show', opinion %></td>
-        <td><%= link_to 'Edit', edit_opinion_path(opinion) %></td>
-        <td><%= link_to 'Destroy', opinion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Afficher', opinion %></td>
+        <td><%= link_to 'Editer', edit_opinion_path(opinion) %></td>
+        <td><%= link_to 'Supprimer', opinion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Opinion', new_opinion_path %>
+<%= link_to 'Nouvel Opinion', new_opinion_path %>
