@@ -1,11 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  idPlace: 1
-  primary_key: MyString
   name: MyString
   description: MyString
-  string: MyString
   address: MyString
   dateStart: 2015-05-04
   dateEnd: 2015-05-04
@@ -14,11 +11,8 @@ one:
   latitude: 1.5
 
 two:
-  idPlace: 1
-  primary_key: MyString
   name: MyString
   description: MyString
-  string: MyString
   address: MyString
   dateStart: 2015-05-04
   dateEnd: 2015-05-04

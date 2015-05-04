@@ -2,15 +2,23 @@
 <html>
 <head>
   <title>APITourisme</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
   <%= 
+  	#stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
   	#javascript_include_tag 'application', 'data-turbolinks-track' => true
   	csrf_meta_tags 
   %>
 </head>
+
 <body>
+<div class="container">
+	<%= yield %>
+</div>
 
-<%= yield %>
-
+<footer>
+    <div class="container">
+        Projet API_Tourisme  v.0.4
+    </div>
+</footer>
 </body>
 </html>
