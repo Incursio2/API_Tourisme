@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pseudo: MyString
+  comment: MyString
+  date: 2015-05-04
+  mark: 1
+
+two:
+  pseudo: MyString
+  comment: MyString
+  date: 2015-05-04
+  mark: 1
