@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150511081701) do
+ActiveRecord::Schema.define(version: 20150518093244) do
 
   create_table "opinions", force: true do |t|
     t.string   "pseudo"
@@ -20,7 +20,10 @@ ActiveRecord::Schema.define(version: 20150511081701) do
     t.integer  "mark"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "place_id"
   end
+
+  add_index "opinions", ["place_id"], name: "index_opinions_on_place_id"
 
   create_table "places", force: true do |t|
     t.string   "name"
