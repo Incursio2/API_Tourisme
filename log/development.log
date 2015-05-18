@@ -1378,3 +1378,131 @@ Processing by PlacesController#index as HTML
   [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
   Rendered places/index.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-05-18 11:19:02 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPlace Load (1.0ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 29ms (Views: 22.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-05-18 11:25:07 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 10714ms
+
+ActionView::Template::Error (TypeError: Cet objet ne gère pas cette propriété ou cette méthode
+  (in C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/turbolinks-2.5.3/lib/assets/javascripts/turbolinks.js.coffee)):
+     5:   <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
+     6:   <%= 
+     7:   	#stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+     8:   	javascript_include_tag 'application', 'data-turbolinks-track' => true
+     9:   	csrf_meta_tags 
+    10:   %>
+    11: </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___864226830_49083960'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (151.1ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-05-18 11:28:47 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPlace Load (1.0ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 7591ms
+
+ActionView::Template::Error (TypeError: Cet objet ne gère pas cette propriété ou cette méthode
+  (in C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/turbolinks-2.5.3/lib/assets/javascripts/turbolinks.js.coffee)):
+     5:   <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
+     6:   <%= 
+     7:   	#stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+     8:   	javascript_include_tag 'application', 'data-turbolinks-track' => true
+     9:   	csrf_meta_tags 
+    10:   %>
+    11: </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___864226830_49083960'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-05-18 11:28:55 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 8055ms
+
+ActionView::Template::Error (TypeError: Cet objet ne gère pas cette propriété ou cette méthode
+  (in C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/turbolinks-2.5.3/lib/assets/javascripts/turbolinks.js.coffee)):
+     5:   <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
+     6:   <%= 
+     7:   	#stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+     8:   	javascript_include_tag 'application', 'data-turbolinks-track' => true
+     9:   	csrf_meta_tags 
+    10:   %>
+    11: </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___864226830_49083960'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.5ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-05-18 11:29:28 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 47ms
+
+LoadError (cannot load such file -- less
+  (in c:/Sites/API_Tourisme/app/assets/stylesheets/bootstrap_and_overrides.css.less)):
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___864226830_51496332'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.6ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (15.6ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (109.4ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-05-18 11:30:13 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 7516ms
+
+ActionView::Template::Error (TypeError: Cet objet ne gère pas cette propriété ou cette méthode
+  (in C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/turbolinks-2.5.3/lib/assets/javascripts/turbolinks.js.coffee)):
+     5:   <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
+     6:   <%= 
+     7:   	#stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+     8:   	javascript_include_tag 'application', 'data-turbolinks-track' => true
+     9:   	csrf_meta_tags 
+    10:   %>
+    11: </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___864226830_49698396'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-18 11:43:45 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
