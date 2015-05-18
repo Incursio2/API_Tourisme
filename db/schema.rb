@@ -33,7 +33,10 @@ ActiveRecord::Schema.define(version: 20150511081701) do
     t.float    "latitude"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "opinion_id"
   end
+
+  add_index "places", ["opinion_id"], name: "index_places_on_opinion_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
