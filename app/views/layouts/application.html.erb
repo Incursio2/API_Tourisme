@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+<div class="container">
   
 <p class="navbar-text pull-right">
 <% if user_signed_in? %>
@@ -22,8 +24,8 @@
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
 <% end %>
 
-<div class="container">
-	<%= yield %>
+
+	
 
   <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
@@ -32,7 +34,10 @@
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 
+
+<%= yield %>
 </div>
+
 
 <br>
 <footer>
