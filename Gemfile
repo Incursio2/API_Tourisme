@@ -45,3 +45,9 @@ gem 'twitter-bootstrap-rails'#, :git => 'git://github.com/seyhunak/twitter-boots
 gem 'execjs'
 
 #gem "therubyracer"  > INUTILE
+gem 'quiet_assets'
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end

@@ -15,6 +15,7 @@ class PlacesController < ApplicationController
   # GET /places/new
   def new
     @place = Place.new
+    # @opinion = Opinion.new
   end
 
   # GET /places/1/edit
@@ -25,7 +26,6 @@ class PlacesController < ApplicationController
   # POST /places.json
   def create
     @place = Place.new(place_params)
-
     respond_to do |format|
       if @place.save
         format.html { redirect_to @place, notice: 'Place was successfully created.' }
