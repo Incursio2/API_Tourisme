@@ -10,6 +10,7 @@ class OpinionsController < ApplicationController
   # GET /opinions/1
   # GET /opinions/1.json
   def show
+    @place = Place.find(params[:place_id])
   end
 
   # GET /opinions/new
@@ -24,11 +25,12 @@ class OpinionsController < ApplicationController
   # POST /opinions
   # POST /opinions.json
   def create
-    @opinion = Opinion.new(opinion_params)
+    @place = Place.find(params[:place_id])
+    @opinion = @place.opinions.create(opinion_params)
 
     respond_to do |format|
       if @opinion.save
-        format.html { redirect_to @opinion, notice: 'Opinion was successfully created.' }
+        format.html { redirect_to @place, notice: 'Opinion was successfully created.' }
         format.json { render :show, status: :created, location: @opinion }
       else
         format.html { render :new }
@@ -51,6 +53,7 @@ class OpinionsController < ApplicationController
     end
   end
 
+
   # DELETE /opinions/1
   # DELETE /opinions/1.json
   def destroy
@@ -64,6 +67,7 @@ class OpinionsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_opinion
+      @place = Place.find(params[:place_id])
       @opinion = Opinion.find(params[:id])
     end
 

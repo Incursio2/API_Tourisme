@@ -40,5 +40,41 @@
   <%= @place.latitude %>
 </p>
 
+<hr>
+<ul>
+  <% @place.opinions.each do |opinion| %>
+    <li>
+      <%= opinion.inspect %>
+      <%= link_to "Edit", edit_place_opinion_path(@place,opinion)  %>
+    </li>
+  <% end %>
+</ul>
+<hr>
+<%= form_for([@place, @place.opinions.build]) do |f| %>
+
+
+  <div class="field">
+    <%= f.label :pseudo %><br>
+    <%= f.text_field :pseudo %>
+  </div>
+  <div class="field">
+    <%= f.label "Commentaire" %><br>
+    <%= f.text_field :comment %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label "Note" %><br>
+    <%= f.number_field :mark %>
+  </div>
+  <br>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
 <%= link_to 'Editer', edit_place_path(@place) %> |
 <%= link_to 'Retour', places_path %>
