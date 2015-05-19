@@ -2300,3 +2300,282 @@ ActionController::RoutingError (No route matches [DELETE] "/users/sign_out"):
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (110.1ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-05-19 14:27:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (1.0ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (15.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 451ms (Views: 425.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/opinions.css?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/opinions.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:13 +0200
+
+
+Started GET "/opinions" for 127.0.0.1 at 2015-05-19 14:27:17 +0200
+Processing by OpinionsController#index as HTML
+  [1m[35mOpinion Load (1.0ms)[0m  SELECT "opinions".* FROM "opinions"
+  Rendered opinions/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 197ms (Views: 191.0ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/opinions/1" for 127.0.0.1 at 2015-05-19 14:27:21 +0200
+Processing by OpinionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"b8vi8NZ0cwcjU67WwrHWAs5Hn4oqkWQ5njKb2tLwkX8=", "id"=>"1"}
+  [1m[36mOpinion Load (2.0ms)[0m  [1mSELECT  "opinions".* FROM "opinions"  WHERE "opinions"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 401 Unauthorized in 38ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-05-19 14:27:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (183.9ms)
+Completed 200 OK in 488ms (Views: 466.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-05-19 14:27:29 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8vi8NZ0cwcjU67WwrHWAs5Hn4oqkWQ5njKb2tLwkX8=", "user"=>{"email"=>"romain.gaillard@y-nov.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'romain.gaillard@y-nov.com'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 17ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8vi8NZ0cwcjU67WwrHWAs5Hn4oqkWQ5njKb2tLwkX8=", "user"=>{"email"=>"romain.gaillard@y-nov.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 360ms (Views: 213.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-05-19 14:27:33 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 413ms (Views: 409.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-05-19 14:27:44 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8vi8NZ0cwcjU67WwrHWAs5Hn4oqkWQ5njKb2tLwkX8=", "user"=>{"email"=>"romain.gaillard@y-nov.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'romain.gaillard@y-nov.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-05-19 12:27:44.398460"], ["email", "romain.gaillard@y-nov.com"], ["encrypted_password", "$2a$10$/0QzEBnkm3K7a2IfvtSF8eKvHvSoDm6WGrX8q5.xhu4qkjk6R16X2"], ["updated_at", "2015-05-19 12:27:44.398460"]]
+  [1m[35m (12.0ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[35mSQL (1.0ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["current_sign_in_at", "2015-05-19 12:27:44.436109"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2015-05-19 12:27:44.436109"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-05-19 12:27:44.437483"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 288ms (ActiveRecord: 25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-19 14:27:44 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 20ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 199ms (Views: 198.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/opinions.css?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/opinions.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-19 14:27:50 +0200
+
+
+Started GET "/opinions" for 127.0.0.1 at 2015-05-19 14:27:51 +0200
+Processing by OpinionsController#index as HTML
+  [1m[35mOpinion Load (0.0ms)[0m  SELECT "opinions".* FROM "opinions"
+  Rendered opinions/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 200ms (Views: 199.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/opinions/1" for 127.0.0.1 at 2015-05-19 14:27:55 +0200
+Processing by OpinionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"b8vi8NZ0cwcjU67WwrHWAs5Hn4oqkWQ5njKb2tLwkX8=", "id"=>"1"}
+  [1m[35mOpinion Load (1.0ms)[0m  SELECT  "opinions".* FROM "opinions"  WHERE "opinions"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mDELETE FROM "opinions" WHERE "opinions"."id" = ?[0m  [["id", 1]]
+  [1m[35m (12.0ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/opinions
+Completed 302 Found in 36ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/opinions" for 127.0.0.1 at 2015-05-19 14:27:55 +0200
+Processing by OpinionsController#index as HTML
+  [1m[36mOpinion Load (1.0ms)[0m  [1mSELECT "opinions".* FROM "opinions"[0m
+  Rendered opinions/index.html.erb within layouts/application (6.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 302ms (Views: 299.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/opinions/new" for 127.0.0.1 at 2015-05-19 14:27:57 +0200
+Processing by OpinionsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered opinions/_form.html.erb (62.4ms)
+  Rendered opinions/new.html.erb within layouts/application (88.2ms)
+Completed 200 OK in 543ms (Views: 543.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/opinions" for 127.0.0.1 at 2015-05-19 14:28:21 +0200
+Processing by OpinionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8vi8NZ0cwcjU67WwrHWAs5Hn4oqkWQ5njKb2tLwkX8=", "opinion"=>{"pseudo"=>"Dieu", "comment"=>"Valentin tu fais chier.", "date(1i)"=>"2015", "date(2i)"=>"5", "date(3i)"=>"19", "mark"=>"10"}, "commit"=>"Create Opinion"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "opinions" ("comment", "created_at", "date", "mark", "pseudo", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["comment", "Valentin tu fais chier."], ["created_at", "2015-05-19 12:28:21.586818"], ["date", "2015-05-19"], ["mark", 10], ["pseudo", "Dieu"], ["updated_at", "2015-05-19 12:28:21.586818"]]
+  [1m[35m (10.0ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/opinions/2
+Completed 302 Found in 21ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/opinions/2" for 127.0.0.1 at 2015-05-19 14:28:21 +0200
+Processing by OpinionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOpinion Load (0.0ms)[0m  [1mSELECT  "opinions".* FROM "opinions"  WHERE "opinions"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered opinions/show.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 276ms (Views: 271.0ms | ActiveRecord: 1.0ms)
