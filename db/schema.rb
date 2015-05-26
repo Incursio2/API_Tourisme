@@ -38,6 +38,9 @@ ActiveRecord::Schema.define(version: 20150518093244) do
     t.datetime "updated_at"
   end
 
+# Could not dump table "sqlite_stat1" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
+
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
